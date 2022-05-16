@@ -1,14 +1,9 @@
-const slider = document.querySelectorAll('.slider'),
-      dots = document.querySelectorAll('.dot'),
+const dots = document.querySelectorAll('.dot'),
       bDots = document.querySelectorAll('.big-dot'),
       content = document.querySelector('.slider-content');
 
 const activeSlide = n => {
     content.style.transform = `translateY(-${100/4 * n}%)`;
-    // for (let slide of slider){
-    //     slide.classList.remove('active');
-    // }
-    // slider[n].classList.add('active');
 }
 
 const activeDot = n => {
@@ -27,11 +22,15 @@ const activebDot = n => {
 dots.forEach((item, index) =>{
     item.addEventListener('click', () =>{
         activeSlide(index);
+        activeDot(index);
+        activebDot (index);
     });
 });
 
 bDots.forEach((item, index) =>{
     item.addEventListener('click', () =>{
         activeSlide(index);
+        activeDot(index);
+        activebDot (index);
     });
 });
