@@ -1,9 +1,11 @@
 const dots = document.querySelectorAll('.dot'),
       bDots = document.querySelectorAll('.big-dot'),
-      content = document.querySelector('.slider-content');
+      content = document.querySelector('.slider-content'),
+      description = document.querySelector('.description-content');
 
 const activeSlide = n => {
     content.style.transform = `translateY(-${100/4 * n}%)`;
+    description.style.transform = `translateY(-${100/4 * n}%)`;
 }
 
 const activeDot = n => {
@@ -34,3 +36,4 @@ bDots.forEach((item, index) =>{
         activebDot (index);
     });
 });
+
