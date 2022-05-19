@@ -1,0 +1,26 @@
+{
+  "name": "cssmem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-plugin-react": "^7.29.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./cssMemSlider/*.js",
+    "lint:fix": "eslint ./cssMemSlider/*.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Louise-Birulia-Bezenson/cssMemSlider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Louise-Birulia-Bezenson/cssMemSlider/issues"
+  },
+  "homepage": "https://github.com/Louise-Birulia-Bezenson/cssMemSlider#readme"
+}
